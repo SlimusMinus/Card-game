@@ -6,10 +6,10 @@ int main()
 	srand(time(NULL));
 	int _size = 10;
 	vector <Game> p1, p2;
-	vector <Game> deck{ Game(10, 3), Game(10, 4), Game(10, 5), Game(10, 6), Game('6', 3), Game('6', 4), Game('6', 5), Game('6', 6),
-	Game('7', 3), Game('7', 4), Game('7', 5), Game('7', 6), Game('8', 3), Game('8', 4), Game('8', 5), Game('8', 6), Game('9', 3), Game('9', 4), Game('9', 5), Game('9', 6),
-	Game('B', 3), Game('B', 4), Game('B', 5), Game('B', 6),Game('D', 3), Game('D', 4), Game('D', 5), Game('D', 6),
-	Game('K', 3), Game('K', 4), Game('K', 5), Game('K', 6),Game('T', 3), Game('T', 4), Game('T', 5), Game('T', 6)};
+	vector <Game> deck{ Game(10, 3), Game(10, 4), Game(10, 5), Game(10, 6), Game(6, 3), Game(6, 4), Game(6, 5), Game(6, 6),
+	Game(7, 3), Game(7, 4), Game(7, 5), Game(7, 6), Game(8, 3), Game(8, 4), Game(8, 5), Game(8, 6), Game(9, 3), Game(9, 4), Game(9, 5), Game(9, 6),
+	Game(11, 3), Game(11, 4), Game(11, 5), Game(11, 6),Game(12, 3), Game(12, 4), Game(12, 5), Game(12, 6),
+	Game(13, 3), Game(13, 4), Game(13, 5), Game(13, 6),Game(14, 3), Game(14, 4), Game(14, 5), Game(14, 6)};
 	
 	
 	random_shuffle(deck.begin(), deck.end());

@@ -9,9 +9,9 @@ using namespace std;
 class Game
 {
 public:
-	char num_s;
+	int num_s;
 	char suit;
-	Game(char num_s, char suit);
+	Game(int num_s, char suit);
 	friend ostream& operator << (ostream& os, Game& card);
 	int Get() { return num_s; };
 	int Get_suit() { return (int)suit; };

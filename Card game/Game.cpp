@@ -1,7 +1,7 @@
 #include "Game.h"
 
 
-Game::Game(char num_s, char suit)
+Game::Game(int num_s, char suit)
 {
 	this->num_s = num_s;
 	this->suit = suit;
@@ -9,13 +9,14 @@ Game::Game(char num_s, char suit)
 
 ostream& operator<<(ostream& os, Game& card)
 {
-	if (card.num_s == 10)
-	{
-		card.num_s = 10;
-		os << (int)card.num_s << " " << card.suit;
-	}
-		
-	else
+	if (card.num_s == 11)
+		os << 'B' << " " << card.suit;
+	else if (card.num_s == 12)
+		os << 'D' << " " << card.suit;
+	else if (card.num_s == 13)
+		os << 'K' << " " << card.suit;
+	else if (card.num_s == 14)
+		os << 'T' << " " << card.suit; else
 		os << card.num_s << " " << card.suit;
 	return os;
 }
